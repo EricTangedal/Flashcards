@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs210.cs210finalproject.DeckEditorController">
+    <children>
+        <ScrollPane hbarPolicy="NEVER" layoutX="112.0" layoutY="99.0" prefHeight="170.0" prefWidth="377.0" vbarPolicy="ALWAYS">
+            <content>
+                <VBox fx:id="vBox" prefHeight="169.0" prefWidth="363.0" />
+            </content>
+        </ScrollPane>
+        <Button layoutX="537.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" text="Home" />
+        <Label alignment="CENTER" layoutX="152.0" layoutY="27.0" prefHeight="43.0" prefWidth="298.0" text="Deck Editor" textAlignment="CENTER">
+            <font>
+                <Font name="Garamond" size="36.0" />
+            </font>
+        </Label>
+      <Label fx:id="deckNameLabel" alignment="CENTER" layoutX="201.0" layoutY="70.0" prefHeight="25.0" prefWidth="198.0" text="Deck Name">
+         <font>
+            <Font name="Garamond" size="18.0" />
+         </font></Label>
+        <HBox alignment="CENTER" layoutX="1.0" layoutY="340.0" prefHeight="61.0" prefWidth="600.0" spacing="30.0">
+            <children>
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#newFlashcard" prefHeight="30.0" prefWidth="90.0" text="New" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#editFlashcard" prefHeight="30.0" prefWidth="90.0" text="Edit" />
+                <Button alignment="CENTER" mnemonicParsing="false" onAction="#deleteFlashcard" prefHeight="30.0" prefWidth="90.0" text="Delete" />
+            </children>
+        </HBox>
+      <HBox alignment="CENTER" layoutY="279.0" prefHeight="61.0" prefWidth="600.0" spacing="30.0">
+         <children>
+            <TextField fx:id="flashcardQuestionInput" prefHeight="25.0" prefWidth="240.0" promptText="Enter a Question" />
+            <TextField fx:id="flashcardAnswerInput" prefHeight="25.0" prefWidth="240.0" promptText="Enter an Answer" />
+         </children>
+      </HBox>
+    </children>
+</AnchorPane>

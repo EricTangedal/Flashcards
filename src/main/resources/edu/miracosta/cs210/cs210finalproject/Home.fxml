@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.miracosta.cs210.cs210finalproject.HomeController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" layoutX="112.0" layoutY="99.0" prefHeight="168.0" prefWidth="377.0" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="vBox" prefHeight="200.0" prefWidth="363.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="496.0" layoutY="15.0" mnemonicParsing="false" onAction="#exitApplication" text="Save and Quit" />
+      <Label alignment="CENTER" layoutX="197.0" layoutY="27.0" prefHeight="43.0" prefWidth="206.0" text="Flashcards" textAlignment="CENTER">
+         <font>
+            <Font name="Garamond" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="emptyLabel" alignment="CENTER" layoutX="99.0" layoutY="70.0" prefHeight="30.0" prefWidth="402.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <HBox alignment="CENTER" layoutX="1.0" layoutY="343.0" prefHeight="43.0" prefWidth="600.0" spacing="10.0">
+         <children>
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#newDeck" prefHeight="30.0" prefWidth="90.0" text="New Deck" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#editDeck" prefHeight="30.0" prefWidth="90.0" text="Edit Deck" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#deleteDeck" prefHeight="30.0" prefWidth="90.0" text="Delete Deck" />
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#viewCards" prefHeight="30.0" prefWidth="90.0" text="View Cards" />
+            <Button alignment="CENTER" layoutX="415.0" layoutY="45.0" mnemonicParsing="false" onAction="#takeQuiz" prefHeight="30.0" prefWidth="90.0" text="Take Quiz" />
+         </children>
+      </HBox>
+      <TextField fx:id="deckNameInput" alignment="CENTER" layoutX="57.0" layoutY="304.0" prefHeight="25.0" prefWidth="288.0" promptText="Enter a name for a new deck" />
+   </children>
+</AnchorPane>
